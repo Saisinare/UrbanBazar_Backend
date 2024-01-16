@@ -13,7 +13,7 @@ const moment = require("moment");
 const mongoose = require("mongoose");
 dotenv.config();
 const corsOptions = {
-  origin: process.env.CLIENT_ORIGIN,
+  origin: "https://urbanbazar.vercel.app",
   credentials: true,
 };
 app.use(cookieParser());
