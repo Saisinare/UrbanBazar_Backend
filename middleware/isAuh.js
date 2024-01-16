@@ -3,7 +3,6 @@ const dotenv = require("dotenv");
 dotenv.config();
 const JWT_SECRETE = process.env.JWT_SCERETE;
 const fetchuser = (req, res, next) => {
-  cookieParser();
   const token = req.cookies.token;
   if (!token) {
     return res
